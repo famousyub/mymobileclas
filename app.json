@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "food-app",
+    "slug": "food-app",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+
+    "description": "A very interesting project.",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to snap and idenitfy food pictures",
+        "NSPhotoLibraryUsageDescription": "Used to identify existing food pictures "
+      },
+      "bundleIdentifier": "com.rs-np.food-classifier"
+    },
+    "android": {
+      "package": "com.rsnp.foodclassifier",
+      "versionCode": 2 ,
+      "permissions": [
+        "CAMERA"
+        ,"CAMERA_ROLL"
+      ]
+    }
+  }
+}
